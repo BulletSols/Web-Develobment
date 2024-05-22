@@ -1,0 +1,61 @@
+<mat-card class="example-card">
+    <mat-card-header>
+        <mat-card-title>Sign Up</mat-card-title>
+    </mat-card-header>
+    <mat-card-content>
+        <form class="example-form" #signupForm="ngForm">
+            <table class="example-full-width" cellspacing="0">
+                <tr>
+                    <td>
+                        <mat-form-field class="example-full-width">
+                            <input matInput placeholder="First Name" [(ngModel)]="firstName" name="firstName" required #firstNameInput="ngModel">
+                            <mat-error *ngIf="firstNameInput.invalid && firstNameInput.touched">First Name is required</mat-error>
+                        </mat-form-field>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <mat-form-field class="example-full-width">
+                            <input matInput placeholder="Last Name" [(ngModel)]="lastName" name="lastName" required #lastNameInput="ngModel">
+                            <mat-error *ngIf="lastNameInput.invalid && lastNameInput.touched">Last Name is required</mat-error>
+                        </mat-form-field>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <mat-form-field class="example-full-width">
+                            <input matInput placeholder="Email" [(ngModel)]="email" name="email" type="email" required email #emailInput="ngModel">
+                            <mat-error *ngIf="emailInput.invalid && emailInput.touched">
+                                <span *ngIf="emailInput.errors?.['required']">Email is required</span>
+                                <span *ngIf="emailInput.errors?.['email']">Invalid email format</span>
+                            </mat-error>
+                        </mat-form-field>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <mat-form-field class="example-full-width">
+                            <input matInput placeholder="Password" [(ngModel)]="password" type="password" name="password" required minlength="6" #passwordInput="ngModel">
+                            <mat-error *ngIf="passwordInput.invalid && passwordInput.touched">
+                                <span *ngIf="passwordInput.errors?.['required']">Password is required</span>
+                                <span *ngIf="passwordInput.errors?.['minlength']">Password must be at least 6 characters</span>
+                            </mat-error>
+                        </mat-form-field>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <mat-form-field class="example-full-width">
+                            <input matInput placeholder="Confirm Password" [(ngModel)]="confirmPassword" type="password" name="confirmPassword" required #confirmPasswordInput="ngModel">
+                            <mat-error *ngIf="confirmPasswordInput.invalid && confirmPasswordInput.touched">Confirm Password is required</mat-error>
+                            <mat-error *ngIf="password !== confirmPassword && confirmPasswordInput.touched">Passwords do not match</mat-error>
+                        </mat-form-field>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </mat-card-content>
+    <mat-card-actions>
+        <button mat-raised-button (click)="signUp(signupForm)" color="primary" [disabled]="signupForm.invalid || password !== confirmPassword">Sign Up</button>
+    </mat-card-actions>
+</mat-card>

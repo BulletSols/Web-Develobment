@@ -1,0 +1,16 @@
+<header>
+  <img src="./assets/cosmonaut.png" alt="logo" width="3%" height="3%">
+  <div>
+    <h1>Astronaut MegaStore</h1>
+    <h4>Shop in Space</h4>
+  </div>
+  <nav>
+    <ul>
+      <ng-container *ngIf="isLoggedIn">
+        <li><a routerLink="/products"><fa-icon [icon]="faHome"></fa-icon>HOME</a></li>
+        <li><a routerLink="/cart"><fa-icon [icon]="faShoppingCart"></fa-icon>CART</a></li>
+        <li class="logout"><a (click)="logout()"><fa-icon [icon]="faSignOutAlt"></fa-icon>LOGOUT</a></li>
+      </ng-container>
+    </ul>
+  </nav>
+</header>

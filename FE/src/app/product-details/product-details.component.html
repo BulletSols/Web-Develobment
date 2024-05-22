@@ -1,0 +1,27 @@
+<div class="main">
+  <div class="left" *ngIf="product">
+    <img src="{{ product.img_path }}" alt="{{ product.name }}">
+  </div>
+  <div *ngIf="product" class="center">
+    <h2>{{ product.name }}</h2>
+    <p>{{product.description}}</p>
+    <div class="btn-grp">
+      <p>Available Quantity: <span id="qty">{{product.quantity}}</span></p>
+      <input matInput type="number" [(ngModel)]="selectedQuantity" min="1" max="{{product.quantity}}" style="width: 100px; height: 25px" (input)="validateQuantity()">
+      <p id="validate" style="display: none">The maximum quantity is {{product.quantity}}</p>
+    </div>
+    <div class="price-cart">
+      <h3><strong>Price: {{product.price | currency}}</strong></h3>
+      <button type="button" (click)="addToCart()"><fa-icon [icon]="faCartPlus"></fa-icon> Add To Cart</button>
+    </div>
+  </div>
+  <aside>
+    <h2>Related Products</h2>
+    <ul *ngIf="productList">
+      <li *ngFor="let prod of productList">
+        <img src="{{prod.img_path}}" alt="box">
+        <a routerLink="/product/{{prod.id}}" (click)="product = prod; selectedQuantity = 1">{{prod.name}}</a>
+      </li>
+    </ul>
+  </aside>
+</div>

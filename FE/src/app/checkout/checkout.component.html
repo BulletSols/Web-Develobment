@@ -1,0 +1,59 @@
+<div class="container">
+    <h1>Checkout</h1>
+
+    <div *ngIf="cartItems && cartItems.products.length > 0; else emptyCart">
+        <div *ngFor="let product of cartItems.products" class="cart-item">
+            <div class="product-info">
+                <img [src]="product.img_path" alt="{{ product.name }}" width="100">
+                <div class="product-details">
+                    <div class="product-name">{{ product.name }}</div>
+                    <div class="product-description">{{ product.description }}</div>
+                </div>
+            </div>
+            <div class="product-price">
+                <div class="price">${{ product.price }}</div>
+                <div class="quantity">Qty: {{ quantities[product.id] }}</div>
+                <div class="total">Total: ${{ product.price * quantities[product.id] }}</div>
+            </div>
+        </div>
+
+        <div class="total-section">
+            <div class="total-label">Subtotal:</div>
+            <div class="total-value">${{ subtotal }}</div>
+        </div>
+
+        <div class="total-section">
+            <div class="total-label">Shipping:</div>
+            <div class="total-value">${{ shippingCost }}</div>
+        </div>
+
+        <div class="total-section">
+            <div class="total-label">Total:</div>
+            <div class="total-value">${{ total }}</div>
+        </div>
+
+        <div class="payment-methods">
+            <h3>Choose Payment Method</h3>
+            <div class="payment-method">
+                <label>
+                    <input type="radio" name="paymentMethod" value="creditCard" [(ngModel)]="selectedPaymentMethod">
+                    Credit Card
+                </label>
+            </div>
+            <div class="payment-method">
+                <label>
+                    <input type="radio" name="paymentMethod" value="paypal" [(ngModel)]="selectedPaymentMethod">
+                    PayPal
+                </label>
+            </div>
+        </div>
+
+        <div class="checkout-button">
+            <button (click)="checkout()">Checkout</button>
+        </div>
+    </div>
+
+    <ng-template #emptyCart>
+        <p>Your cart is empty.</p>
+    </ng-template>
+</div>

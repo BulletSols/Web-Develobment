@@ -1,0 +1,170 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+.main{
+    display: flex;
+    text-align: center;
+    color: #fff;
+    padding: 1.5%;
+}
+
+/*For the left division*/
+.left{
+    flex: calc(30% - 2px);
+}
+
+
+.left img{
+    width: 90%;
+    padding: 20% 8%;
+    border: 2px dashed #fff;
+}
+
+/*For the center division*/
+.center{
+    flex: calc(50% - 2px);
+    padding: 0% 2%;
+    position: relative;
+    background-color: rgba(9, 9, 9, 0.482);
+    margin-right: 2%;
+    margin-left: 0.5%;
+    height: 500px;
+}
+
+.center h2{
+    padding: 3% 0;
+}
+
+.center > p{
+    padding-bottom: 5%;
+    text-align: left
+}
+
+.center h3{
+    padding-bottom: 3%;
+    text-align: left
+}
+
+.price-cart{
+    display: flex;
+    position: relative;
+    top: 10px;
+}
+
+.price-cart h3{
+    margin-top: 10%;
+    margin-left: 5%;
+    padding: 1% 4%;
+    background-color: #8bc76b;
+    width: fit-content;
+    border: 1px solid #000;
+    color: black;
+}
+
+.price-cart h3:hover{
+    margin-top: 10%;
+    margin-left: 5%;
+    padding: 1% 4%;
+    background-color: #8bc76b;
+    width: fit-content;
+    border: 1px solid #000;
+    color: #fff;
+}
+
+.price-cart button{
+    margin-top: 10%;
+    margin-left: 5%;
+    padding: 1% 4%;
+    background-color: #8bc76bbe;
+    width: fit-content;
+    border: 1px solid #000;
+    font-size: 16px;
+    flex: auto;
+    cursor: pointer;
+    color: #000 ;
+    height: 43px;
+}
+
+.price-cart button:hover{
+    margin-top: 10%;
+    margin-left: 5%;
+    padding: 1% 4%;
+    background-color: #8bc76b;
+    width: fit-content;
+    border: 1px solid #000;
+    font-size: 16px;
+    flex: auto;
+    color: #fff;
+    cursor: pointer;
+}
+.btn-grp{
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-grp p{
+    text-align: left;
+    padding: 5px;
+    background-color: rgba(250, 235, 215, 0.332);
+    width: fit-content;
+}
+
+#validate{
+    display: none;
+    color: red;
+    background-color: transparent;
+    width: auto;
+    font-weight: bolder;
+}
+
+.btn-grp input{
+}
+
+/*For the aside division*/
+aside{
+    flex: calc(20% - 2px);
+    display: block;
+    border-left: 2px solid white;
+    background-color: rgba(9, 9, 9, 0.482);
+}
+
+aside ul{
+    list-style: none;
+    margin-top: 7%;
+}
+
+aside img{
+    width: 50px;
+    height: 50px;
+    text-align: left;
+}
+
+aside ul li {
+    padding: 5%;
+    border: 1px solid white;
+    display: flex;
+    margin-bottom: 5% !important;
+    margin: 0 7%;
+}
+
+aside ul li:hover {
+    padding: 5%;
+    border: 1px solid white;
+    display: flex;
+    margin-bottom: 5%;
+    background-color: #f6f1f1a9;
+}
+
+aside ul li a{
+    display: flex;
+    text-decoration: none;
+    color: #fff;
+    padding: 6%;
+}
+
+aside h2{
+    margin-top: 25px;
+}

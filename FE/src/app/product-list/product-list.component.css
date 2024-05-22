@@ -1,0 +1,24 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+
+.mid {
+    /* display: flex; */
+    text-align: center;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    padding-top: 1%;
+}
+
+
+.mid img{
+    width: 70%;
+    /*height: 60%;*/
+}
+
+.mid a{
+    text-decoration: none;
+    color: white;
+}

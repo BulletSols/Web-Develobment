@@ -1,0 +1,43 @@
+# dependencies
+/node_modules
+
+# compiled output
+/dist
+/tmp
+/out-tsc
+
+# local npm configuration
+/.npmrc
+
+# logs
+/logs
+*.log
+
+# runtime data
+/pnpm-debug.log*
+
+# yarn.lock file
+yarn.lock
+
+# IDE files
+/.idea
+/.vscode
+*.iml
+
+# macOS
+.DS_Store
+
+# Windows
+Thumbs.db
+
+# IDEs
+*.code-workspace
+
+# Angular generated files
+/e2e/*.json
+/e2e/*.js
+/e2e/*.map
+
+# Angular cache
+.angular
+/.angular/

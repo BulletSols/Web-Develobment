@@ -1,0 +1,31 @@
+<div class="mid" *ngIf="!emptyCart; else emptyCartTemplate">
+  <table>
+    <thead>
+    <tr>
+      <th>#</th>
+      <th>Name</th>
+      <th>Quantity</th>
+      <th>Total Price</th>
+    </tr>
+    </thead>
+    <tbody>
+    <tr *ngFor="let product of cart.products, let i = index;">
+      <td>{{i + 1}}</td>
+      <td>{{product.name}}</td>
+      <td style="position: relative">
+        <input matInput type="number" [(ngModel)]="cart.quantities[product.id]" min="1" max="{{product.quantity}}" style="width: 100px; height: 25px" (input)="validateQuantity(cart.quantities[product.id], product.quantity, i)">
+        <p class="validate" style="display: none">The maximum quantity is {{product.quantity}}</p>
+      </td>
+      <td>{{totalPrice(product.id) | currency}}</td>
+    </tr>
+    </tbody>
+  </table>
+  <a routerLink="../checkout"><button>Checkout</button></a>
+  <button type="button" (click)="updateCart()">Save</button>
+</div>
+
+<ng-template #emptyCartTemplate>
+  <div class="mid" style="font-size: 84px; padding: 70px 20px">
+    Your cart is empty.
+  </div>
+</ng-template>

@@ -1,0 +1,24 @@
+# Maven-specific files and directories
+/target/
+
+# IDE-specific files
+.idea/
+.vscode/
+
+# Logs
+/logs
+
+# Other generated files
+/coverage
+/docs
+/javadoc
+/bin
+
+# Gradle-specific files
+.gradle
+
+# Custom directories to exclude
+/dds                # Exclude the dds directory
+
+# macOS-specific files
+.DS_Store

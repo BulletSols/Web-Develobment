@@ -1,0 +1,85 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  flex-grow: 1;
+  align-items: center;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: linear-gradient(to left, rgba(115, 25, 218, 0.8), rgba(76, 0, 130, 0.801), rgb(65, 65, 156, 0.8), rgb(3, 101, 198, 0.8), rgb(60, 124, 229, 0.8), rgb(80, 147, 208, 0.8), rgb(11, 6, 110, 0.8));
+  padding: 1% 0;
+}
+
+h1 {
+  font-weight: 500;
+  font-family: fantasy;
+  background: linear-gradient(to right, white, rgb(236, 232, 237), rgba(177, 177, 181, 0.926), rgb(130, 132, 133), rgb(102, 104, 104), rgb(60, 60, 61), rgb(11, 11, 11));
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+}
+
+header h4 {
+  font-family: "Brush Script MT";
+  background: linear-gradient(to left, white, rgb(236, 232, 237), rgba(177, 177, 181, 0.926), rgb(130, 132, 133), rgb(102, 104, 104), rgb(60, 60, 61), rgb(11, 11, 11));
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  text-align: end;
+  font-size: 22px;
+}
+
+nav ul {
+  display: flex;
+  padding: 1% 2%;
+  list-style: none;
+  flex-grow: 1;
+}
+
+nav ul li {
+  margin-right: 20px;
+}
+
+nav ul li:last-child {
+  margin-left: auto;
+}
+
+nav ul li a {
+  display: flex;
+  padding: 10px 10px;
+  text-decoration: none;
+  color: rgb(7, 0, 0);
+  font-size: 25px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+nav ul li a:hover {
+  color: #fff;
+}
+
+nav ul li a i {
+  padding-right: 8px;
+  font-size: 22px;
+}
+
+header img {
+  margin: 0 10px;
+}
+
+header div {
+  display: flex;
+  flex-direction: column;
+}
+
+.logout {
+  margin-left: auto;
+}
