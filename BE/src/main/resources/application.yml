@@ -1,6 +1,8 @@
 spring:
   datasource:
-    url: jdbc:postgresql://localhost:5432/postgres
+    url: jdbc:postgresql://viaduct.proxy.rlwy.net:55643/railway
+    username: postgres
+    password: kyFWResFoNkJshUkfJsYIVyqwqzOSkJz
     driver-class-name: org.postgresql.Driver
   hikari:
     maximum-pool-size: 10
