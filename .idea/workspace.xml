@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4cf1b007-02a2-415b-8b79-642abdc3181d" name="Changes" comment="First commit">
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BE/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/BE/src/main/resources/application.yml" afterDir="false" />
+    <list default="true" id="4cf1b007-02a2-415b-8b79-642abdc3181d" name="Changes" comment="Changing DB configuration to railways">
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/BE/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -90,7 +88,7 @@
       <workItem from="1716417142730" duration="188000" />
       <workItem from="1716417433118" duration="543000" />
       <workItem from="1716448400862" duration="59000" />
-      <workItem from="1716485363984" duration="1509000" />
+      <workItem from="1716485363984" duration="1814000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -124,7 +122,15 @@
       <option name="project" value="LOCAL" />
       <updated>1716417883733</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Changing DB configuration to railways">
+      <option name="closed" value="true" />
+      <created>1716487757223</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1716487757223</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -158,6 +164,7 @@
     <MESSAGE value="first commit" />
     <MESSAGE value="minor fixes" />
     <MESSAGE value="First commit" />
-    <option name="LAST_COMMIT_MESSAGE" value="First commit" />
+    <MESSAGE value="Changing DB configuration to railways" />
+    <option name="LAST_COMMIT_MESSAGE" value="Changing DB configuration to railways" />
   </component>
 </project>
