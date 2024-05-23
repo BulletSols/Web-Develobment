@@ -34,6 +34,25 @@
 #   MAVEN_SKIP_RC - flag to disable loading of mavenrc files
 # ----------------------------------------------------------------------------
 
+
+#!/bin/bash
+
+# Update package lists
+sudo apt update
+
+# Install OpenJDK 11 (adjust version if needed)
+sudo apt install openjdk-17-jdk
+
+# Get the installation path of the default Java binary
+JAVA_HOME=$(update-alternatives --query java | grep ^link | cut -d'/' -f2-)
+
+# Set JAVA_HOME environment variable
+export JAVA_HOME
+
+# Print JAVA_HOME for verification
+echo "JAVA_HOME is set to: $JAVA_HOME"
+##end of testing script
+
 if [ -z "$MAVEN_SKIP_RC" ] ; then
 
   if [ -f /etc/mavenrc ] ; then
