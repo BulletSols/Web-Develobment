@@ -38,10 +38,9 @@
 #!/bin/bash
 
 # Update package lists
-sudo apt update
 
 # Install OpenJDK 11 (adjust version if needed)
-sudo apt install openjdk-17-jdk
+apt install openjdk-17-jdk
 #test script
 
 if [ -z "$MAVEN_SKIP_RC" ] ; then

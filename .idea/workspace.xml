@@ -5,8 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4cf1b007-02a2-415b-8b79-642abdc3181d" name="Changes" comment="Adding mvn wrapper">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BE/mvnw" beforeDir="false" afterPath="$PROJECT_DIR$/BE/mvnw" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -92,7 +90,7 @@
       <workItem from="1716417142730" duration="188000" />
       <workItem from="1716417433118" duration="543000" />
       <workItem from="1716448400862" duration="59000" />
-      <workItem from="1716485363984" duration="3970000" />
+      <workItem from="1716485363984" duration="4252000" />
     </task>
     <task id="LOCAL-00001" summary="first commit">
       <option name="closed" value="true" />
@@ -150,7 +148,23 @@
       <option name="project" value="LOCAL" />
       <updated>1716491654309</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Adding mvn wrapper">
+      <option name="closed" value="true" />
+      <created>1716492392193</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1716492392193</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Adding mvn wrapper">
+      <option name="closed" value="true" />
+      <created>1716492600774</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1716492600774</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
