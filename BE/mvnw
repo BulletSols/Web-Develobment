@@ -34,15 +34,6 @@
 #   MAVEN_SKIP_RC - flag to disable loading of mavenrc files
 # ----------------------------------------------------------------------------
 
-
-#!/bin/bash
-
-# Update package lists
-
-# Install OpenJDK 11 (adjust version if needed)
-apt install openjdk-17-jdk
-#test script
-
 if [ -z "$MAVEN_SKIP_RC" ] ; then
 
   if [ -f /etc/mavenrc ] ; then
